@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ООО «КИМ»</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="main">
+   <header class="header" id="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo" class="логотип">
+            </div>
+            <p class="text__gray-header">Железнодорожные перевозки</p>
+        </div>
+    </header>
+
+    <main class="bg">
+      <!-- Шапка -->
+      <div class="main__logo">
+        <div class="img__main">
+          <img src="img/logo.png" alt="логотип" />
+        </div>
+        <p class="text__gray">Железнодорожные перевозки</p>
+      </div>
+
+      <!-- Кнопки -->
+
+      <div class="content-df">
+        <div class="options">
+          <div id="option1" class="option fixed-width" onclick="toggleWidth(this)">
+            <p>О компании</p>
+            <div class="option__img"></div>
+          </div>
+          <div id="option2" class="option" onclick="toggleWidth(this)">
+            <p>О компании</p>
+            <div class="option__img"></div>
+          </div>
+          <a href="album.html" class="option option__a">
+            <p>О компании</p>
+            <div class="option__img-a"></div>
+          </a>
+        </div>
+
+        <!-- Карты -->
+
+        <div class="cards">
+            <div class="card show" id="card1" onclick="this.classList.toggle('is-flipped')">
+                <div class="card__face card__face--front card__face--front1 card__bg-rf">
+                <p>О КОМПАНИИ</p>
+                </div>
+                    <div class="card__face card__face--back">
+                        <p class="card__title">О КОМПАНИИ</p>
+                        <p class="card__text">
+                            ООО «КИМ» — динамично развивающаяся транспортная компания на
+                            российском рынке, специализирующаяся на отправке и приеме грузов
+                            в крытых вагонах, полувагонах, платформах.
+                            <br /><br />
+                            Квалифицированный персонал нашей компании считает приоритетами
+                            своей деятельности высокое качество обслуживания и порядочность.
+                            Мы предлагаем отлаженный механизм работы и долгосрочное
+                            взаимовыгодное сотрудничество.
+                            <br /><br />
+                            Мы дорожим репутацией своей компании и всех, кто сотрудничает с
+                            нами. ООО «КИМ» оказывает весь комплекс услуг Российским
+                            предприятиям по транспортировке груза во всех регионах.
+                            Клиентами компании являются как малые предприятия, так и
+                            крупнейшие холдинги, сетевые и торговые компании. Сотрудничаем
+                            только с проверенными поставщиками. И надеемся на наше
+                            долгосрочное сотрудничество в будущем!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card2" id="card2" onclick="this.classList.toggle('is-flipped')">
+                <div class="card__face card__face--front card__face--front2 card__bg-rf2">
+                <p>Доставка вашего груза по всей РФ и СНГ</p>
+                </div>
+                    <div class="card__face card__face--back">
+                        <p class="card__title card__title2">Доставка вашего груза по всей РФ и СНГ</p>
+                        <p class="card__text">
+                            ООО «КИМ» — динамично развивающаяся транспортная компания на
+                            российском рынке, специализирующаяся на отправке и приеме грузов
+                            в крытых вагонах, полувагонах, платформах.
+                            <br /><br />
+                            Квалифицированный персонал нашей компании считает приоритетами
+                            своей деятельности высокое качество обслуживания и порядочность.
+                            Мы предлагаем отлаженный механизм работы и долгосрочное
+                            взаимовыгодное сотрудничество.
+                            <br /><br />
+                            Мы дорожим репутацией своей компании и всех, кто сотрудничает с
+                            нами. ООО «КИМ» оказывает весь комплекс услуг Российским
+                            предприятиям по транспортировке груза во всех регионах.
+                            Клиентами компании являются как малые предприятия, так и
+                            крупнейшие холдинги, сетевые и торговые компании. Сотрудничаем
+                            только с проверенными поставщиками. И надеемся на наше
+                            долгосрочное сотрудничество в будущем!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide__btn">
+          <div class="footer-slide" id="showBtn">
+            <div class="img__footer-slide img-reverse"><img src="img/arrows.svg" alt="стрелочки"></div>
+            <p class="footer-slide__text">Контакты</p>
+          </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+      <div class="map-container">
+
+        <div class="slide__btn slide__btn-footer">
+          <div class="footer-slide footer-slide-up" id="hideBtn">
+            <p class="footer-slide__text footer-slide__text-up">Главная</p>
+            <div class="img__footer-slide img__footer-slide-up"><img src="img/arrows.svg" alt="стрелочки"></div>
+          </div>
+        </div>
+
+        <a href="https://yandex.ru/maps/org/kim/207098053961/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Kim</a><a href="https://yandex.ru/maps/20720/verhnyaya-pyshma/category/rail_freight_transport/184108181/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Железнодорожные грузоперевозки в Верхней Пышме</a><iframe src="https://yandex.ru/map-widget/v1/org/kim/207098053961/?ll=60.581026%2C56.970486&z=16" class="map" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+
+        <div class="contacts">
+          <h2>Контакты</h2>
+          <p>Время работы: Пн - Пт, 9.00 - 18.00</p>
+         <div>
+           <p>+7(34368) 77 889</p>
+           <p>info@kim-ural.ru</p>
+           <p>г.Верхняя Пышма, ул. Кривоусова 14а, ЖК "Резиденция"</p>
+         </div>
+         <div class="contacts__img-container">
+          <a href="https://wa.me/79346877889">
+            <img src="img/whatsapp.svg" alt="whatsapp" class="contacts__img">
+          </a>
+          <a href="https://t.me/kim_ural">
+            <img src="img/telegram.svg" alt="telegram" class="contacts__img">
+          </a>
+          <a href="https://vk.com/kim_ural">
+            <img src="img/vk.svg" alt="vk" class="contacts__img">
+          </a>
+         </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/helloScreen.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/imgSvg.js"></script>
+  </body>
+</html>
