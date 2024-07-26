@@ -621,7 +621,7 @@ footer{
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1361px) {
   .text__gray{
     margin-top: 5vh;
   }
@@ -637,11 +637,11 @@ footer{
     gap: 1vh;
     height: 21vh;
     width: 21vh;
-    margin-top: 13vh;
+    margin-top: 10vh;
   }
 
   .footer-slide__text{
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .img__footer-slide{
@@ -649,7 +649,7 @@ footer{
   }
 
   .footer-slide:hover{
-    margin-top: 9vh;
+    margin-top: 6vh;
   }
 
   .footer-slide-up{
@@ -661,7 +661,7 @@ footer{
   }
 
   .contacts{
-    height: 55vh;
+    height: 60vh;
     width: 20vw;
   }
   
@@ -670,12 +670,48 @@ footer{
   }
 
   .header__btn{
-    width: 16vw;
-    margin-left: -10vw;
+    width: 14vw;
+    margin-left: -8vw;
   }
   
   .header__btn img{
-    width: 5vw;
+    width: 3vw;
   }
 
+  .header__btn-text{
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 1290px) {
+  .footer-slide{
+    margin-top: 12vh;
+  }
+
+  .footer-slide__text{
+    font-size: 22px;
+  }
+
+  .img__footer-slide{
+    width: 3vw;
+  }
+
+  .footer-slide:hover{
+    margin-top: 8vh;
+  }
+
+  .footer-slide-up{
+    margin-top: 12vh;
+  }
+
+  .footer-slide-up:hover{
+    margin-top: 19vh;
+  }
+  
+  .header__btn{
+    width: 14vw;
+    margin-left: -8vw;
+  }
+  
 }
