@@ -135,6 +135,10 @@ main {
   color: #494947;
 }
 
+.a__hover{
+  border-bottom: 2px solid #494947;
+}
+
 .a__hover:hover{
   color:#666666;
 }
@@ -465,6 +469,10 @@ footer{
   transition: 0.5s all;
 }
 
+.contacts a{
+  border-bottom: 1px solid white;
+}
+
 .contacts a:hover{
   color: #6475a8;
 }
@@ -686,7 +694,8 @@ footer{
     width: 20vw;
   }
   
-  .contacts p{
+  .contacts p,
+  .contacts a{
     font-size: 18px;
   }
 
