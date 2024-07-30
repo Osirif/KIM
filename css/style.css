@@ -130,16 +130,22 @@ main {
 .text__gray{
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 36px;
-  margin-top: 8vh;
+  font-size: 23px;
+  margin-top: 4vh;
+  color: #494947;
+}
+
+.a__hover:hover{
+  color:#666666;
 }
 
 .img__main {
-  width: 15vw;
+  width: 10vw;
   margin-left: 2vw;
 }
 
 .options {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -153,7 +159,7 @@ main {
   align-items: center;
   justify-content: right;
   margin-left: 1vw;
-  height: 15vh;
+  height: 12vh;
   border-radius: 10px;
   padding-right: 2vw;
   transition: all 0.5s;
@@ -358,13 +364,16 @@ footer{
 }
 
 .slide__btn{
+  position:  absolute;
+  left: 44.1%;
+
   display: flex;
   justify-content: center;
   user-select: none;
 }
 
 .footer-slide{
-  margin-top: 13vh;
+  margin-top: 18vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -388,7 +397,7 @@ footer{
 }
 
 .footer-slide:hover{
-  margin-top: 8vh;
+  margin-top: 14vh;
 }
 
 .footer-slide__text{
@@ -432,8 +441,8 @@ footer{
 .contacts{
   position: absolute;
   background-color: #0C183B;
-  width: 30vw;
-  height: 70vh;
+  width: 20vw;
+  height: 55vh;
   left: 0;
   top: 20vh;
   z-index: 1;
@@ -448,10 +457,16 @@ footer{
   font-size: 40px;
 }
 
-.contacts p{
+.contacts p,
+.contacts a{
   color: white;
   font-weight: normal;
   font-size: 30px;
+  transition: 0.5s all;
+}
+
+.contacts a:hover{
+  color: #6475a8;
 }
 
 .contacts__img-container{
@@ -482,7 +497,7 @@ footer{
   border: none;
   background-color: #0C183B;
   width: 12vw;
-  height: 15vh;
+  height: 10vh;
   margin-left: -7vw;
   border-radius:0 1vw 1vw 0;
   display: flex;
@@ -503,7 +518,7 @@ footer{
 }
 
 .header__btn img{
-  width: 4vw;
+  width: 3vw;
   transform: rotateY(180deg);
 }
 
@@ -624,10 +639,16 @@ footer{
 @media (max-width: 1361px) {
   .text__gray{
     margin-top: 5vh;
+    font-size: 15px;
   }
+
+  .option p{
+    font-size: 34px;
+  }
+
   .option__img,
   .option__img-a{
-    margin-left: 10vw;
+    margin-left: 12vw;
   }
 
   .card__text{
@@ -637,7 +658,7 @@ footer{
     gap: 1vh;
     height: 21vh;
     width: 21vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
 
   .footer-slide__text{
@@ -649,7 +670,7 @@ footer{
   }
 
   .footer-slide:hover{
-    margin-top: 6vh;
+    margin-top: 15vh;
   }
 
   .footer-slide-up{
