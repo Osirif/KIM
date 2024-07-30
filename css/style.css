@@ -341,6 +341,10 @@ main {
   color: #494947;
 }
 
+.bolder{
+  color: #0C183B;
+}
+
 .card.is-flipped .card__face--front {
   transform: rotateY(180deg);
 
