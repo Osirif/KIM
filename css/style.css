@@ -337,7 +337,7 @@ main {
 
 .card__text{
   font-weight: bold;
-  font-size: 23px;
+  font-size: 22px;
   color: #494947;
 }
 
@@ -545,7 +545,7 @@ footer{
   padding: 0 6vw 0 6vw;
   margin-left: 10vw;
   opacity: 1;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
 }
 
 .card__album {
