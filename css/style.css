@@ -131,7 +131,7 @@ main {
 .text__gray{
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 35px;
   margin-top: 4vh;
   color: #494947;
 }
@@ -255,13 +255,13 @@ main {
   user-select: none;
   position: relative;
   width: 30vw;
-  height: 85vh;
+  height: 80vh;
   perspective: 1000px;
   cursor: default;
   margin-right: 3vw;
   transition: all 0.5s;
   position: fixed;
-  top: 10vh;
+  top: 13vh;
   right: 0;
   transform: translateX(200%);
   transition: transform 0.5s;
@@ -651,8 +651,8 @@ footer{
 
 @media (max-width: 1361px) {
   .text__gray{
-    margin-top: 5vh;
-    font-size: 15px;
+    margin-top: 4vh;
+    font-size: 25px;
   }
 
   .option p{
@@ -665,7 +665,7 @@ footer{
   }
 
   .card__text{
-    font-size: 17px;
+    font-size: 16px;
   }
   .footer-slide{
     gap: 1vh;
