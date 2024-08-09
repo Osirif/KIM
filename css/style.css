@@ -76,6 +76,10 @@ a {
   z-index: 101;
 }
 
+.header__content{
+  opacity: 0;
+}
+
 .hidden {
   opacity: 0;
   pointer-events: none;
@@ -102,6 +106,35 @@ a {
   margin-top: 1vh;
   font-size: 45px;
   border-bottom: #494947 5px solid;
+}
+
+.loading-indicator {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+.circle {
+  position: absolute;
+  top: 50vh;
+  left: 3vw;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-top-color: #019c02;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 /* Главный экран */
@@ -261,7 +294,7 @@ main {
   margin-right: 3vw;
   transition: all 0.5s;
   position: fixed;
-  top: 13vh;
+  top: 15vh;
   right: 0;
   transform: translateX(200%);
   transition: transform 0.5s;
@@ -545,7 +578,7 @@ footer{
   justify-content: start;
   align-self: center;
   gap: 5vw;
-  row-gap: 2vw;
+  row-gap: 1.5vw;
   padding: 0 6vw 6vh 6vw;
   margin-left: 10vw;
   opacity: 1;
@@ -554,7 +587,7 @@ footer{
 
 .card__album {
   position: relative;
-  width: 20vw;
+  width: 22vw;
   background-color: #fff;
 }
 
