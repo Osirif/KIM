@@ -16,12 +16,6 @@ function flipCard(card) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const card1 = document.getElementById('card1');
-    timeoutID = setTimeout(() => {
-        flipCard(card1);
-    }, 2500);
-});
 
 const option1 = document.getElementById('option1');
 const option2 = document.getElementById('option2');
