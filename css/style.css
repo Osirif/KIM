@@ -49,6 +49,7 @@ a{
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 body {
@@ -195,11 +196,12 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right;
+  justify-content: start;
   margin-left: 1vw;
   height: 12vh;
   border-radius: 10px;
   padding-right: 2vw;
+  padding-left: 14vw;
   transition: all 0.5s;
   cursor: pointer;
   user-select: none;
@@ -210,7 +212,21 @@ main {
   width: 2vw;
   height: 4vh;
   background-repeat: no-repeat;
-  margin-left: 15vw;
+  margin-left: 12vw;
+  background-position: 90% 50%;
+}
+
+.option2__img{
+  margin-left: 19vw;
+}
+
+
+.option__img-a {
+  background-image: url("../img/arrow.svg");
+  width: 2vw;
+  height: 4vh;
+  background-repeat: no-repeat;
+  margin-left: 2vw;
   background-position: 90% 50%;
 }
 
@@ -272,15 +288,6 @@ main {
   width: 1vw;
 }
 
-.option__img-a {
-  background-image: url("../img/arrow.svg");
-  width: 2vw;
-  height: 4vh;
-  background-repeat: no-repeat;
-  margin-left: 15vw;
-  background-position: 90% 50%;
-}
-
 /* Карточки */
 ::-webkit-scrollbar { display: none; }
 
@@ -323,6 +330,7 @@ main {
 }
 
 .card__face--front2{
+  text-transform: uppercase;
   font-size: 96px;
 }
 
@@ -362,15 +370,16 @@ main {
   color: #494947;
   font-size: 45px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .card__title2{
-  font-size: 32px;
+  font-size: 45px;
 }
 
 .card__text{
   font-weight: bold;
-  font-size: 22px;
+  font-size: 23px;
   color: #494947;
 }
 
@@ -539,7 +548,7 @@ footer{
   position: fixed;
   top: 0;
   left: 0;
-  margin-top: 5vh;
+  margin-top: 3vh;
   border: none;
   background-color: #0C183B;
   width: 12vw;
@@ -571,7 +580,7 @@ footer{
 /* Альбом */
  
 .album{
-  margin-top: 5vh;
+  margin: 15vh 0 8vh 8vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -579,16 +588,20 @@ footer{
   align-self: center;
   gap: 5vw;
   row-gap: 1.5vw;
-  padding: 0 6vw 6vh 6vw;
-  margin-left: 10vw;
+  padding: 0 0vw 6vh 0vw;
   opacity: 1;
-  margin-bottom: 8vh;
 }
 
 .card__album {
   position: relative;
-  width: 22vw;
+  width: 26vw;
   background-color: #fff;
+}
+
+.album__img{
+  width: 26vw;
+  height: 18vw;
+  object-fit: cover;
 }
 
 .image__album{
@@ -597,7 +610,7 @@ footer{
 
 .album__text {
   position: absolute;
-  bottom: 1vh;
+  bottom: 0;
   left: 0;
   right: 0;
   padding: 0.5vw 2vw 1vw 2vw;
@@ -605,11 +618,15 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   max-height: 5vh;
   transition: max-height 0.7s;
   border-radius: 10px;
+}
+
+.album__text-p{
+  font-size: 17px;
 }
 
 .card__album:hover .album__text {
@@ -627,8 +644,24 @@ footer{
     font-size: 32px;
   }
 
+  .option p{
+    font-size: 33px;
+  }
+
   .card{
     width: 35vw;
+  }
+
+  .album__img{
+    height: 33vh; 
+  }
+
+  .album__text{
+    gap: 0.5vw;
+  }
+
+  .album__text-p{
+    font-size: 14px;
   }
 
   .text__gray{
@@ -647,7 +680,7 @@ footer{
   .footer-slide{
     height: 24vh;
     width: 24vh;
-    margin-top: 11vh;
+    margin-top: 19vh;
     gap: 1vh;
   }
 
@@ -656,7 +689,7 @@ footer{
   }
 
   .footer-slide:hover{
-    margin-top: 6vh;
+    margin-top: 14vh;
   }
 
   .footer-slide-up{
@@ -689,16 +722,24 @@ footer{
   }
 
   .option p{
-    font-size: 34px;
+    font-size: 30px;
   }
 
-  .option__img,
+  .option__img{
+    margin-left: 13.5vw;
+  }
+
+
+  .option2__img{
+    margin-left: 20vw;
+  }
+
   .option__img-a{
-    margin-left: 12vw;
+    margin-left: 4vw;
   }
 
   .card__text{
-    font-size: 16px;
+    font-size: 17px;
   }
   .footer-slide{
     gap: 1vh;
@@ -750,9 +791,34 @@ footer{
     font-size: 22px;
   }
 
+  .album__img{
+    height: 36vh; 
+  }
+
+  .album__text{
+    gap: 0.5vw;
+  }
+
+  .album__text-p{
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 1290px) {
+  .option__img{
+    margin-left: 13vw;
+  }
+
+
+  .option2__img{
+    margin-left: 20vw;
+  }
+
+  .option__img-a{
+    margin-left: 3vw;
+  }
+
   .footer-slide{
     margin-top: 12vh;
   }
@@ -765,8 +831,12 @@ footer{
     width: 3vw;
   }
 
+  .footer-slide{
+    margin-top: 20vh;
+  }
+
   .footer-slide:hover{
-    margin-top: 8vh;
+    margin-top: 15vh;
   }
 
   .footer-slide-up{
@@ -781,5 +851,4 @@ footer{
     width: 14vw;
     margin-left: -8vw;
   }
-  
 }
