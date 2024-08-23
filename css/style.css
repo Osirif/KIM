@@ -586,7 +586,7 @@ footer{
   flex-wrap: wrap;
   justify-content: start;
   align-self: center;
-  gap: 5vw;
+  gap: 1.5vw;
   row-gap: 1.5vw;
   padding: 0 0vw 6vh 0vw;
   opacity: 1;
@@ -594,14 +594,23 @@ footer{
 
 .card__album {
   position: relative;
-  width: 26vw;
+  width: 28vw;
   background-color: #fff;
 }
 
 .album__img{
-  width: 26vw;
+  width: 28vw;
   height: 18vw;
   object-fit: cover;
+}
+
+.card__album-hopper{
+  margin-top: 2vw;
+  height: 16vw;
+}
+
+.hopper{
+  height: 16vw;
 }
 
 .image__album{
