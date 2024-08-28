@@ -221,7 +221,7 @@ main {
 }
 
 .option__img {
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/options/arrow.svg");
   width: 2vw;
   height: 4vh;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ main {
 
 
 .option__img-a {
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/options/arrow.svg");
   width: 2vw;
   height: 4vh;
   background-repeat: no-repeat;
@@ -256,7 +256,7 @@ main {
   }
   100% {
     opacity: 1;
-    background-image: url("../img/full_arrow.svg");
+    background-image: url("../img/options/full_arrow.svg");
     background-repeat: no-repeat;
     width: 7vw;
     height: 8vh;
@@ -266,7 +266,7 @@ main {
 @keyframes changeImageReverse {
   0% {
     opacity: 1;
-    background-image: url("../img/full_arrow.svg");
+    background-image: url("../img/options/full_arrow.svg");
     background-repeat: no-repeat;
     width: 7vw;
     height: 8vh;
