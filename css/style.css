@@ -192,6 +192,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  margin-left: 1vw;
 }
 
 .option {
@@ -201,7 +202,6 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  margin-left: 1vw;
   height: 12vh;
   border-radius: 10px;
   padding-right: 2vw;
@@ -209,6 +209,15 @@ main {
   transition: all 0.5s;
   cursor: pointer;
   user-select: none;
+}
+
+.gallery{
+  border: 2px solid #0C183B;
+  color: #0C183B;
+  width: 10.5vw;
+  border-radius: 10px;
+  font-size: 1.8vw;
+  padding: 1vh 1vw 1vh 1vw;
 }
 
 .option__img {
@@ -285,7 +294,7 @@ main {
 .option p {
   text-transform: uppercase;
   color: white;
-  font-size: 45px;
+  font-size: 2.35vw;
 }
 
 .arrow {
@@ -428,7 +437,7 @@ footer{
 
 .footer-slide{
   position: absolute;
-  bottom: -42vh;
+  bottom: -30vh;
   left: 0;
   display: flex;
   align-items: center;
@@ -445,7 +454,7 @@ footer{
 }
 
 .footer-slide:hover{
-  bottom: -36.5vh;
+  bottom: -25vh;
 }
 
 .img-reverse{
@@ -665,10 +674,6 @@ footer{
     font-size: 20px;
   }
 
-  .option p{
-    font-size: 2.35vw;
-  }
-
   .footer-slide-up{
     margin-top: 12vh;
   }
@@ -740,10 +745,6 @@ footer{
     font-size: 32px;
   }
 
-  .option p{
-    font-size: 33px;
-  }
-
   .card{
     width: 35vw;
   }
@@ -801,10 +802,6 @@ footer{
   .text__gray{
     margin-top: 4vh;
     font-size: 25px;
-  }
-
-  .option p{
-    font-size: 30px;
   }
 
   .option__img{
@@ -888,14 +885,6 @@ footer{
 
   .img__footer-slide{
     width: 3vw;
-  }
-
-  .footer-slide{
-    margin-top: 21vh;
-  }
-
-  .footer-slide:hover{
-    margin-top: 15vh;
   }
 
   .footer-slide-up{
