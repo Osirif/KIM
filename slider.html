@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="img/kim-fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.css" />
+  <link rel="icon" type="image/x-icon" href="img/kim-fav.png">
 </head>
+
 <body>
-    
+  <main>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/slider/1.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/slider/2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/slider/3.jpeg" alt=""></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
+
 </html>
