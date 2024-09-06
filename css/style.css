@@ -211,6 +211,10 @@ main {
   user-select: none;
 }
 
+.option:hover {
+  background-color: #193074;
+}
+
 .gallery{
   border: 2px solid #0C183B;
   color: #0C183B;
@@ -218,6 +222,10 @@ main {
   border-radius: 10px;
   font-size: 1.8vw;
   padding: 1vh 1vw 1vh 1vw;
+}
+
+.gallery:hover {
+  background-color: #193074;
 }
 
 .option__img {
@@ -277,10 +285,6 @@ main {
   100% {
     opacity: 1;
   }
-}
-
-.option:hover {
-  background-color: #193074;
 }
 
 .option.fixed-width {
