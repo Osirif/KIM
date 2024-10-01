@@ -8,4 +8,5 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  lazy: true,
 });
